@@ -4,24 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
-    <link rel="stylesheet" href="reset.css"> <!-- This is a Semantic HTML Change -->
-    <link rel="stylesheet" href="main.css"> <!-- This is a Semantic HTML Change -->
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="main.css"> 
+
+
+    <meta name="robots" content="index, follow">   <!-- This is an SEO Change 1 -->
+
+    <meta name="description" content="Take control of your finances with My Personal Budget application,   
+     your trusted personal budgeting tool. Set goals, track expenses, and achieve financial freedom effortlessly. 
+     Join us today to start your journey to financial wellness.">           <!-- This is an SEO Change 2-->
+
+    <meta name="og:title" property="og:title" content="World's Best Personal Budget Website">  <!-- This is an SEO Change 3-->
+
 </head>
 <body>
 
-    <div class="menu">
-        <ul>
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
-        </ul>
+ 
+
+    <!-- This is a Semantic HTML Change 1-->
+    <!-- adding a nav element is Semantic HTML change -->
+
+
+    <nav role="navigation">         <!-- This is an A11y Change 1 --> <!--  adding ARIA roles like role="navigation" to indicate that they are menu items for easy accessibility -->
+        <div class="menu">
+            <ul class="menu">
+                <li role="menuitem"><a href="/">Homepage</a></li>
+                <li role="menuitem"><a href="about.html">About</a></li>
+                <li role="menuitem"><a href="login.html" title="link which redirects to login page">Login</a></li>  <!-- This is an A11y Change 2--> <!-- adding a title for accessibility  -->
+                <li role="menuitem"><a href="https://google.com">Google</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    <!-- This is a Semantic HTML Change 2-->
+    <!-- adding a header element is a semantic HTML change -->
+    <div class="hero">          
+        <header>                    
+            <h1>Personal Budget</h1>
+            <h2>A personal-budget management app</h2>
+        </header>
     </div>
 
-    <div class="hero">
-        <h1>Personal Budget</h1>
-        <h2>A personal-budget management app</h2>
-    </div>
+ 
 
     <div class="container center">
 
@@ -95,11 +121,12 @@
 
     </div>
 
-    <div class="bottom">
-        <div class="center">
-            All rights reserved &copy; Fabio Nolasco
-        </div>
-    </div>
+    <!-- This is a Semantic HTML Change 3-->
+    <!-- adding a footer element is a semantic HTML change -->
+    
+    <footer class="bottom center">                      
+        <p>All rights reserved &copy; Fabio Nolasco</p>
+    </footer>
 
 </body>
 </html>
