@@ -133,7 +133,7 @@ var dataSource1 = {
     labels: []
 };
 
-axios.get('/budget').then(function (res) 
+axios.get('http://localhost:3000/budget').then(function (res) 
 {
     for (let i = 0; i < res.data.myBudget.length; i++) {
         dataSource1.data.push(res.data.myBudget[i].budget);
