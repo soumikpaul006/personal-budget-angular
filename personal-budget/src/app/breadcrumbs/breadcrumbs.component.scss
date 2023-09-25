@@ -1,0 +1,30 @@
+/* Add custom styles for the breadcrumbs component */
+.breadcrumbs {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Define custom classes for each breadcrumb item */
+.breadcrumb-item-1 {
+  color: #007bff; /* Blue color for the first breadcrumb item */
+}
+
+.breadcrumb-item-2 {
+  color: #ff5733; /* Red color for the second breadcrumb item */
+}
+
+.breadcrumb-item-3 {
+  color: #33cc33; /* Green color for the third breadcrumb item */
+}
+
+/* Style the breadcrumb separators */
+.breadcrumbs span:not(:last-child)::after {
+  content: " > ";
+  margin: 0 5px;
+  color: #777;
+}
+
+/* Style the last breadcrumb item without separator */
+.breadcrumbs span:last-child::after {
+  content: "";
+}
